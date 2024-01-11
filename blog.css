@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+.heading {
+  font-size: 3.5rem;
+  text-align: center;
+  padding: 2rem;
+  color: navy;
+}
+
+.blogslider {
+  padding: 2rem 0 0 0;
+  position: relative;
+  /* border: 2px solid red; */
+  width: 100%;
+  cursor: pointer;
+  height: 55rem;
+background-color: beige;
+}
+
+.slick-prev {
+  position: absolute;
+  left: 0.5rem;
+  top: 50%;
+  font-size: 2rem;
+  font-weight: 900;
+  background-color: transparent;
+  color: blue;
+  border: none;
+  z-index: 111;
+  cursor: pointer;
+}
+
+.slick-next {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  font-size: 2rem;
+  font-weight: 900;
+  background-color: transparent;
+  color: blue;
+  border: none;
+  z-index: 111;
+  cursor: pointer;
+}
+.blogbox {
+  position: relative;
+  border: 1px solid grey;
+  height: 100%;
+  box-shadow: 1px 1px 5px black;
+}
+.imgpart img {
+  height: 100%;
+  width: 100%;
+}
+.details{
+  background-color: white;
+}
+.details h1 {
+  font-size: 2rem;
+  line-height: 4rem;
+  width: 100%;
+  text-align: center;
+  /* border: 1px solid red; */
+}
+.details p {
+  font-size: 1.3rem;
+  padding: 01rem;
+  letter-spacing: 1px;
+  line-height: 2rem;
+}
+.blog1,
+.blog2 {
+  height: 30rem;
+  display: flex;
+  width: 95%;
+  margin: 3rem auto;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  cursor: pointer;
+}
+.blogimage {
+  width: 40%;
+  height: 100%;
+}
+.blogimage img {
+  height: 100%;
+  width: 100%;
+}
+.blogdetails {
+  width: 60%;
+  height: 100%;
+}
+.blogdetails h1 {
+  padding: 2rem;
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Courier New", Courier, monospace;
+  color: blue;
+}
+.blogdetails p {
+  padding: 2rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  word-spacing: 3px;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50% !important;
+  }
+  .blogslider {
+    height: 60rem;
+  }
+}
+@media (max-width: 650px) {
+  .imgpart {
+    border: 2px solid green;
+    padding: 2rem;
+  }
+  .blog1 {
+    flex-wrap: wrap-reverse;
+    min-height: 60rem;
+  }
+  .blogdetails {
+    width: 100%;
+    height: 60%;
+  }
+  .blogimage {
+    width: 100%;
+    height: 40%;
+  }
+  .blog2 {
+    flex-wrap: wrap;
+    min-height: 60rem;
+  }
+}
